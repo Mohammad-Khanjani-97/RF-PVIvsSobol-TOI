@@ -100,9 +100,9 @@ Advanced analysis including statistical replications for confidence interval est
 
 **Configuration:**
 ```python
-self.base_samples = [200, 400, 600, 800, 1000]  # Sample sizes
+self.base_samples = list(np.arange(200, 3000, 200))  # Sample sizes
 self.n_variables = 8                             # Dimensionality
-self.num_replications = 2                        # Statistical replications
+self.num_replications = 20                       # Statistical replications
 ```
 
 **Output:**
