@@ -38,9 +38,9 @@ class SensitivityAnalysisConfig:
     """Configuration class for sensitivity analysis parameters."""
     def __init__(self):
         #============== Inputs:
-        self.base_samples = [200, 400, 600, 800, 1000]
+        self.base_samples = list(np.arange(200, 3000, 200))
         self.n_variables = 8
-        self.num_replications = 2 # Number of resampling runs for each base sample
+        self.num_replications = 20 # Number of resampling runs for each base sample
         #==============
         
         
@@ -158,7 +158,7 @@ class SensitivityAnalyzer:
     def _compute_sobol_indices(self, sample_size):
         """Computes Sobol total-order indices for a given sample size."""
         g_func = GFunction(self.config.coefficients)
-        analyzer = SobolAnalyzer(self.config.base_samples, self.config.n_variables, g_func.evaluate)
+        analyzer = SobolAnalyzer(sample_size, self.config.n_variables, g_func.evaluate)
         analyzer.perform_analysis()
         input_data = analyzer.input_data
         output_data = analyzer.output_data
