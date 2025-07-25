@@ -2,11 +2,11 @@
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 
 A comprehensive Python package for comparing **Random Forest Permutation Variable Importance (RF-PVI)** with **Sobol Total-Order Indices (Sobol-TOI)** in global sensitivity analysis. This implementation explores the theoretical connection between machine learning-based importance measures and variance-based sensitivity indices using the G-function benchmark.
 
-## 📊 Overview
+## Overview
 
 This package implements and compares two prominent sensitivity analysis methods:
 
@@ -15,7 +15,7 @@ This package implements and compares two prominent sensitivity analysis methods:
 
 The comparison is performed using the **G-function**, a well-established benchmark in sensitivity analysis literature, providing both analytical and numerical validation of results.
 
-## 🎯 Key Features
+## Key Features
 
 - **Three Progressive Examples**: From single-sample analysis to multi-sample with replications
 - **Analytical Benchmarking**: Compare against known analytical G-function sensitivity indices
@@ -23,7 +23,7 @@ The comparison is performed using the **G-function**, a well-established benchma
 - **Robust Implementation**: Handles various sample sizes and dimensionalities
 - **Statistical Analysis**: Includes rank correctness rates and confidence intervals
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 RF-PVIvsSobol-TOI/
@@ -43,7 +43,7 @@ RF-PVIvsSobol-TOI/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -65,7 +65,7 @@ cd Example1
 python Example1.py
 ```
 
-## 📋 Examples
+## Examples
 
 ### Example 1: Single Sample Analysis
 Compares RF-PVI and Sobol-TOI using a single sample size, providing basic sensitivity index and ranking comparisons.
@@ -154,7 +154,7 @@ analyzer.perform_analysis()
 total_order_indices = analyzer.TO
 ```
 
-## 📊 Theoretical Background
+## Theoretical Background
 
 This package explores the theoretical connection between RF-PVI and Sobol-TOI as established by:
 
@@ -167,7 +167,7 @@ The G-function provides an ideal benchmark because:
 - **Controllable parameter importance** through coefficients
 - **Well-established** in sensitivity analysis literature
 
-## 🎨 Visualization Features
+## Visualization Features
 
 All examples generate publication-ready plots with:
 - **Professional styling** with seaborn aesthetics
@@ -176,7 +176,7 @@ All examples generate publication-ready plots with:
 - **High-resolution output** (300 DPI) for publications
 - **Customizable color schemes** and layouts
 
-## 📈 Configuration Options
+## Configuration Options
 
 ### G-Function Dimensionality
 - **8D**: `coefficients = [0, 0.08, 0.25, 0.55, 1, 3, 15, 90]`
@@ -193,7 +193,7 @@ self.base_samples = [200, 400, 600]
 self.base_samples = [200, 400, 600, 800, 1000, 1500, 2000]
 ```
 
-## 🔬 Research Applications
+## Research Applications
 
 This package is suitable for:
 - **Method comparison studies** in sensitivity analysis
@@ -201,7 +201,7 @@ This package is suitable for:
 - **Uncertainty quantification** applications
 - **Educational purposes** in global sensitivity analysis
 
-## 📚 References
+## References
 
 1. **Saltelli, A., & Sobol, I. M. (1995)**. About the use of rank transformation in sensitivity analysis of model output. *Reliability Engineering & System Safety*, 50(3), 225–239.
 
@@ -212,21 +212,16 @@ This package is suitable for:
 4. **Saltelli, A., et al. (2008)**. *Global Sensitivity Analysis: The Primer*. John Wiley & Sons.
 
 
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- Inspired by the `rfpimp` library by Terence Parr
-- Built upon established sensitivity analysis frameworks
+- Inspired by the [`rfpimp` ](https://github.com/parrt/random-forest-importances) library by Terence Parr  
+- Built upon established sensitivity analysis frameworks  
 - Thanks to the global sensitivity analysis research community
 
----
 
-**Note**: This implementation is designed for research and educational purposes. For production applications, consider computational efficiency optimizations based on your specific requirements.
+
+
