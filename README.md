@@ -23,25 +23,7 @@ The comparison is performed using the **G-function**, a well-established benchma
 - **Robust Implementation**: Handles various sample sizes and dimensionalities
 - **Statistical Analysis**: Includes rank correctness rates and confidence intervals
 
-## Repository Structure
 
-```
-RF-PVIvsSobol-TOI/
-├── Main/
-│   ├── G_Function.py          # G-function implementation with analytical indices
-│   ├── PVIwithOOB.py          # Random Forest PVI with OOB estimation
-│   └── Sobol.py               # Sobol indices computation
-├── Example1/
-│   ├── Example1.py            # Single sample analysis
-│   └── Visual1.py             # Visualization for single sample
-├── Example2/
-│   ├── Example2.py            # Multi-sample analysis
-│   └── Visual2.py             # Visualization for multi-sample
-├── Example3/
-│   ├── Example3.py            # Multi-sample with replications
-│   └── Visual3.py             # Advanced visualization with CI
-└── README.md
-```
 
 ## Quick Start
 
